@@ -1,0 +1,53 @@
+.revision-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.revision-item {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+    padding: 12px 14px;
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    transition: all .2s;
+}
+
+.revision-item:hover {
+    border-color: var(--accent-primary);
+}
+
+.revision-done {
+    opacity: .5;
+}
+
+.revision-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    flex-shrink: 0;
+}
+
+.revision-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.revision-topic {
+    font-size: .87rem;
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+.revision-date {
+    font-size: .75rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+}
+
+.revision-actions {
+    display: flex;
+    gap: 6px;
+}

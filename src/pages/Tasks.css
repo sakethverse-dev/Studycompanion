@@ -1,0 +1,52 @@
+.tasks-tabs-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 12px;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.tab-count {
+    background: rgba(255, 255, 255, .12);
+    border-radius: 10px;
+    padding: 0 6px;
+    font-size: .72rem;
+    margin-left: 4px;
+}
+
+.tab.active .tab-count {
+    background: rgba(255, 255, 255, .2);
+}
+
+.tasks-toolbar {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 16px;
+    flex-wrap: wrap;
+}
+
+.filter-panel {
+    background: var(--bg-secondary);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    padding: 14px;
+    margin-bottom: 16px;
+    display: flex;
+    gap: 12px;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+
+.tasks-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 14px;
+}
+
+.active-btn {
+    border-color: var(--accent-primary) !important;
+    color: var(--accent-secondary) !important;
+}
