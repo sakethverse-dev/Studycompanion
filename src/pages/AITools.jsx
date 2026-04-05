@@ -4,6 +4,7 @@ import { MdSmartToy, MdCopyAll, MdCheck, MdAutoAwesome } from 'react-icons/md';
 import { toast } from 'react-toastify';
 import { generateAIContent } from '../services/aiService';
 import { useStudy } from '../context/StudyContext';
+import PageHeader from '../components/PageHeader';
 import './AITools.css';
 
 const TYPES = [
@@ -53,10 +54,11 @@ export default function AITools() {
 
     return (
         <div className="page-wrapper">
-            <div className="page-header">
-                <h1>🤖 AI Study Assistant</h1>
-                <p>Generate summaries, practice questions, and flashcards instantly</p>
-            </div>
+            <PageHeader 
+                title="AI Study Assistant" 
+                subtitle="Generate summaries, practice questions, and flashcards instantly"
+                icon="🤖"
+            />
 
             <div className="aitools-layout">
                 {/* Main panel */}
@@ -188,3 +190,4 @@ export default function AITools() {
         </div>
     );
 }
+
